@@ -1,0 +1,5 @@
+#EXTM3U
+http://www.e900x.com:8000/VWsMVyCHx1/NZkVAcdzaK/2447
+#EXTINF:-1 tvg-ID="svt1.se" tvg-name="[SWE] SVT 1 FHD" tvg-logo="http://213.152.173.38:25461/logos/svt_1.png" group-title="Sweden",[SWE] SVT 1 FHD
+http://www.e900x.com:8000/VWsMVyCHx1/NZkVAcdzaK/2447
+#EXTINF:-1 tvg-ID="svt1.se" tvg-name="[SWE] SVT 1 FHD" tvg-logo="http://213.152.173.38:25461/logos/svt_1.png" group-title="Sweden",[SWE] SVT 1 FHD
