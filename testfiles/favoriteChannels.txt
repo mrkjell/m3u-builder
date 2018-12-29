@@ -1,0 +1,25 @@
+#EXTM3U
+#EXTINF:-1 tvg-ID="svt1.se" tvg-name="[SWE] SVT 1 FHD" tvg-logo="http://213.152.173.38:25461/logos/svt_1.png" group-title="Min lista",[SWE] SVT 1 FHD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2571
+#EXTINF:-1 tvg-ID="svt2.se" tvg-name="[SWE] SVT 2 HD" tvg-logo="http://213.152.173.38:25461/logos/svt_2.png" group-title="Min lista",[SWE] SVT 2 HD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2450
+#EXTINF:-1 tvg-ID="tv3.se" tvg-name="[SWE] TV 3 HD" tvg-logo="http://213.152.173.38:25461/logos/tv3.png" group-title="Min lista",[SWE] TV 3 HD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2456
+#EXTINF:-1 tvg-ID="tv4.se" tvg-name="[SWE] TV4 FHD" tvg-logo="http://213.152.173.38:25461/logos/tv4.png" group-title="Min lista",[SWE] TV4 FHD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2461
+#EXTINF:-1 tvg-ID="kanal5.se" tvg-name="[SWE] Kanal 5 FHD" tvg-logo="http://213.152.173.38:25461/logos/kanal_5_se.png" group-title="Min lista",[SWE] Kanal 5 FHD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2189
+#EXTINF:-1 tvg-ID="tv6.se" tvg-name="[SWE] TV 6 FHD" tvg-logo="http://213.152.173.38:25461/logos/tv6_se.png" group-title="Min lista",[SWE] TV 6 FHD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2195
+#EXTINF:-1 tvg-ID="sjuan.se" tvg-name="[SWE] Sjuan HD" tvg-logo="http://213.152.173.38:25461/logos/sjuan-se.png" group-title="Min lista",[SWE] Sjuan HD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2448
+#EXTINF:-1 tvg-ID="tv8.se" tvg-name="[SWE] TV 8 HD" tvg-logo="http://213.152.173.38:25461/logos/tv8se.png" group-title="Min lista",[SWE] TV 8 HD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2196
+#EXTINF:-1 tvg-ID="kanal9.se" tvg-name="[SWE] Kanal 9 FHD" tvg-logo="http://213.152.173.38:25461/logos/kanal9_se.png" group-title="Min lista",[SWE] Kanal 9 FHD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2581
+#EXTINF:-1 tvg-ID="tv10.se" tvg-name="[SWE] TV 10 HD" tvg-logo="http://213.152.173.38:25461/logos/tv_10_se.png" group-title="Min lista",[SWE] TV 10 HD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2457
+#EXTINF:-1 tvg-ID="kanal11.se" tvg-name="[SWE] Kanal 11 FHD" tvg-logo="http://213.152.173.38:25461/logos/kanal_11_se.png" group-title="Min lista",[SWE] Kanal 11 FHD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2188
+#EXTINF:-1 tvg-ID="tv12.se" tvg-name="[SWE] TV 12 FHD" tvg-logo="http://213.152.173.38:25461/logos/tv-12-se.png" group-title="Min lista",[SWE] TV 12 FHD
+http://www.e900x.com:8000/HJWbvVXtXm/EAVvVYG0WP/2458

@@ -1,4 +1,4 @@
-var XMLHttpRequest  = require("xmlhttprequest").XMLHttpRequest;
+const XMLHttpRequest  = require("xmlhttprequest").XMLHttpRequest;
 const writeFileAtomically = require('write-file-atomically');
 
 getData = (url) => new Promise(
@@ -7,11 +7,10 @@ getData = (url) => new Promise(
     xhr.open("GET", url, false);
 
     xhr.onreadystatechange = function () {         
-      if (xhr.readyState == 4 && (xhr.status === 200 || xhr.status == 0)) {        
+      if (xhr.readyState == 4 && (xhr.status === 200 || xhr.status == 0))  
         resolve(xhr.responseText) 
-      } else {
-        reject(new Error('Could not get data from ' + url));
-      }              
+      else
+        reject(new Error('Could not get data from ' + url));  
     }
   
     xhr.send();
@@ -25,29 +24,44 @@ getList = (url) => {
 }
 
 createMyTvList = async () => {
-  var newList = '';
-  var myList = await getList('file://C:\\Projects\\filedownloader\\testfiles\\mychannellist.txt');
-  var tvList = await getList('file://C:\\Projects\\filedownloader\\testfiles\\tvchannels.m3u');
+  var newChannelList = '#EXTM3U';
+  var myChannelList = await getList('file://C:\\Projects\\filedownloader\\testfiles\\mychannellist.txt');
+  var iptvList = await getList('file://C:\\Projects\\filedownloader\\testfiles\\tv_channels_HJWbvVXtXm_plus.m3u');
 
-  var myListArr = myList.split('\n');
-  var tvListArr = tvList.split('\n');
+  var myChannelListArr = myChannelList.split('|');
+  var iptvListArr = iptvList.split('\n');
+  var qualityArr = ['FHD', 'HD', ''];
   
-  myListArr.forEach((myItem, myi) => {
-    tvListArr.forEach((tvItem, tvi) => {
-      // Adds first line (#EXTM3U) to new file
-      if(myi === 0 && tvi === 0){
-        newList += tvItem;
-      }
+  myChannelListArr.forEach((myChannel) => {
+    var added = false;
 
-      if(tvItem.toLowerCase().includes(myItem.toLowerCase())){
-        newList += '\n' + tvListArr[tvi-1] + '\n' + tvItem;
-      }
+    qualityArr.forEach((quality) => {
+      
+      if(added) 
+        return;
+
+      iptvListArr.forEach((iptvChannel, iptvIndex) => {
+        if(added) 
+          return;
+
+        if(!iptvChannel.includes('group-title="Sweden"')) 
+          return;
+
+        var channel = myChannel + ' ' + quality;
+
+        if(iptvChannel.toLowerCase().includes(channel.toLowerCase())) {
+          newChannelList += '\n' + iptvChannel.replace('group-title="Sweden"', 'group-title="Min lista"') + '\n' + iptvListArr[iptvIndex+1];
+          added = true;
+        }
+      })
+
     })
+
+    if(!added)
+       console.log('could not find ' + myChannel )
   });
 
-  await writeFileAtomically('C:\\Projects\\filedownloader\\testfiles\\test.txt', newList);
-  console.log(newList);
-
+  await writeFileAtomically('C:\\Projects\\filedownloader\\testfiles\\favoriteChannels.txt', newChannelList);
 }
 
 createMyTvList();
