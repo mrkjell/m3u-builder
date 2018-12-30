@@ -1,1 +1,76 @@
-SVT 1|SVT 2|TV 3|TV4|Kanal 5|TV 6|sjuan|TV 8|Kanal 9|TV 10|Kanal 11|TV 12
+SVT 1|
+SVT 2|
+TV 3|
+TV4|
+Kanal 5|
+TV 6|
+Sjuan|
+TV 8|
+Kanal 9|
+TV 10|
+Kanal 11|
+TV 12|
+Fox|
+Fjorton|
+MTV|
+Barn Program|
+Barnkanalen|
+Cartoon Network|
+Disney Channel|
+Disney Junior|
+Disney XD|
+Nick Jr|
+Nicktoons|
+Animal Planet|
+Discovery Channel|
+Discovery Science|
+Discovery World|
+Investigation Discovery|
+National Geographics|
+National Geographics Wild|
+Outdoor Channel|
+History|
+Extreme Sports|
+Fight Sports|
+Motorsport|
+TV 3 Sport|
+TV4 Sport|
+TV4 Fakta|
+TV4 FaktaXL|
+TV4 Film|
+TV4 Komedi|
+Viasat Action|
+Viasat Action|
+Viasat Explorer|
+Viasat Family|
+Viasat Film Action|
+Viasat Film Hits|
+Viasat Film Premiere|
+Viasat Fotboll|
+Viasat Golf|
+Viasat Hockey|
+Viasat Motor|
+Viasat Series|
+Viasat Sport|
+Viasat Sport Premium|
+C More First|
+C More Fotboll|
+C More Golf|
+C More Hits|
+C More Hockey|
+C More Live 2|
+C More Live 3|
+C More Live 4|
+C More Live|
+C More Series|
+C More Sport|
+C More Stars|
+ATG Live|
+Dagens Industri|
+E! Entertainment|
+H2|
+SF-Kanalen|
+SVT Kunskapskanalen|
+TLC|
+TNT Nordic|
+Travel Channel

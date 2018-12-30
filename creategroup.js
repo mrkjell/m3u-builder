@@ -23,16 +23,13 @@ getList = (url) => {
   })
 }
 
-createMyTvList = async () => {
+createFavoritGroup = async (iptvListArr) => {
   var newChannelList = '#EXTM3U';
-  var myChannelList = await getList('file://C:\\Projects\\filedownloader\\testfiles\\mychannellist.txt');
-  var iptvList = await getList('file://C:\\Projects\\filedownloader\\testfiles\\tv_channels_HJWbvVXtXm_plus.m3u');
-
-  var myChannelListArr = myChannelList.split('|');
-  var iptvListArr = iptvList.split('\n');
+  var channelList = await getList('file://C:\\Projects\\filedownloader\\testfiles\\mychannellist.txt');
+  var channelListArr = channelList.split('|');
   var qualityArr = ['FHD', 'HD', ''];
   
-  myChannelListArr.forEach((myChannel) => {
+  channelListArr.forEach((channel) => {
     var added = false;
 
     qualityArr.forEach((quality) => {
@@ -47,10 +44,10 @@ createMyTvList = async () => {
         if(!iptvChannel.includes('group-title="Sweden"')) 
           return;
 
-        var channel = myChannel + ' ' + quality;
+        var fullChannelName = channel.trim() + ' ' + quality;
 
-        if(iptvChannel.toLowerCase().includes(channel.toLowerCase())) {
-          newChannelList += '\n' + iptvChannel.replace('group-title="Sweden"', 'group-title="Min lista"') + '\n' + iptvListArr[iptvIndex+1];
+        if(iptvChannel.toLowerCase().includes(fulChannelName.toLowerCase())) {
+          newChannelList += '\n' + iptvChannel.replace('group-title="Sweden"', 'group-title="Favorit"') + '\n' + iptvListArr[iptvIndex+1];
           added = true;
         }
       })
@@ -58,10 +55,15 @@ createMyTvList = async () => {
     })
 
     if(!added)
-       console.log('could not find ' + myChannel )
+       console.log('could not find ' + channel )
   });
 
   await writeFileAtomically('C:\\Projects\\filedownloader\\testfiles\\favoriteChannels.txt', newChannelList);
 }
 
-createMyTvList();
+(init = async () => {
+  var iptvList = await getList('file://C:\\Projects\\filedownloader\\testfiles\\tv_channels_HJWbvVXtXm_plus.m3u');
+  var iptvListArr = iptvList.split('\n');
+
+  createFavoritGroup(iptvListArr);
+})();
