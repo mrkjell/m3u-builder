@@ -1,7 +1,7 @@
 SVT 1|
 SVT 2|
 TV 3|
-TV4|
+TV 4|
 Kanal 5|
 TV 6|
 Sjuan|
@@ -34,11 +34,11 @@ Extreme Sports|
 Fight Sports|
 Motorsport|
 TV 3 Sport|
-TV4 Sport|
-TV4 Fakta|
-TV4 FaktaXL|
-TV4 Film|
-TV4 Komedi|
+TV 4 Sport|
+TV 4 Fakta|
+TV 4 FaktaXL|
+TV 4 Film|
+TV 4 Komedi|
 Viasat Action|
 Viasat Action|
 Viasat Explorer|
