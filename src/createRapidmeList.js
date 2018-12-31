@@ -12,6 +12,7 @@ String.prototype.replaceAll = function(search, replacement) {
 
 getIptv = async (iptvListArr, onlySwedish = false) => {
     var iptvArr = [];
+    var vodArr = [];
     var country = ''
     var groupTitle = '';
     var skipIndex = '';
@@ -39,14 +40,22 @@ getIptv = async (iptvListArr, onlySwedish = false) => {
 
             var iptvChannelSplit = iptvChannel.split(',');
             var customExtinfRow = buildHelper.getExtinf(iptvChannelSplit[1], groupTitle);
-            iptvArr.push(customExtinfRow);
+
+            if(groupTitle.toLowerCase().includes('vod'))
+                vodArr.push(customExtinfRow);
+            else
+                iptvArr.push(customExtinfRow);
         }
         else {
-            iptvArr.push(iptvChannel);            
+            if(groupTitle.toLowerCase().includes('vod'))
+                vodArr.push(customExtinfRow);
+            else
+                iptvArr.push(iptvChannel);            
         }
     });
 
-    return iptvArr;
+
+    return iptvArr.concat(vodArr);
 
 }
 
