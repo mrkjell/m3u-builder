@@ -9,17 +9,56 @@ getCommonChannelname = (extinfRow) => {
     return (extinfRow.split(',')[1]).replaceAll('SE', '').replaceAll('FHD', '').replaceAll('HD', '').replaceAll('VIP','').replaceAll(' ', '').trim();
 }
 
+tryManualFixChannelName = (extinfRow) => {
+    var extinfSplit = extinfRow.split(',');
+    if(!extinfSplit[1].includes(' SE'))
+        return extinfRow;
+
+    if(extinfSplit[1].toLowerCase().includes('svt') ){
+        if(extinfSplit[1].trim().charAt(3) === ' ')
+            extinfSplit[1] = extinfSplit[1].splice(4, 1, '');
+        extinfRow = extinfSplit[0] + ',' + extinfSplit[1];
+
+        console.log(extinfRow);
+
+    }
+    else if(extinfSplit[1].toLowerCase().includes('tv')){
+        if(extinfSplit[1].trim().charAt(2) === ' ')
+            extinfSplit[1] = extinfSplit[1].splice(3, 1, '');
+        extinfRow = extinfSplit[0] + ',' + extinfSplit[1];
+
+    console.log(extinfRow);
+
+    }
+    else if(extinfSplit[1].toLowerCase().includes('kanal')){
+        if(extinfSplit[1].trim().charAt(5) !== ' ')
+            extinfSplit[1] = extinfSplit[1].splice(5, 0, ' ')
+        extinfRow = extinfSplit[0] + ',' + extinfSplit[1];
+
+    console.log(extinfRow);
+
+    }
+    return extinfRow;
+}
+
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
     return target.split(search).join(replacement);
 };
 
-getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false) => {
+String.prototype.splice = function(start, delCount, newSubStr) {
+    return this.slice(0, start) + newSubStr + this.slice(start + Math.abs(delCount));
+};
+
+getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, tryFixSwedishChannelName = false) => {
     var iptvArr = [];
     var vodArr = [];
     var country = ''
     var groupTitle = '';
     var skipIndex = '';
+
+    /// Change m3u row format 
+    /// Split up iptv and vod
     iptvListArr.forEach((iptvChannel, i) => { 
         if(skipIndex == i)
             return;
@@ -48,7 +87,7 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false) =
             if(groupTitle.toLowerCase().includes('vod'))
                 vodArr.push(customExtinfRow);
             else
-                iptvArr.push(customExtinfRow);
+                iptvArr.push(tryManualFixChannelName(customExtinfRow));
         }
         else {
             if(groupTitle.toLowerCase().includes('vod'))
@@ -58,13 +97,14 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false) =
         }
     });
 
-    if(tryRemoveDuplicate){
+
+    /// Remove duplicate channels
+    if(tryRemoveDuplicate) {
         var distinctIptvArr = [];
         var lastAdded = '';
 
             iptvArr.forEach((mainItem, mainIndex) => {
                 var bestQualiryAdded = false; 
-
                 if(!mainItem.includes('#EXTINF')) 
                     return;
 
@@ -81,6 +121,7 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false) =
                 );
 
                     iptvArr.forEach((compareItem, compareIndex) => {
+
                         if(!compareItem.includes('#EXTINF'))
                             return;
 
@@ -91,8 +132,6 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false) =
                             compareItem.lastIndexOf('group-title="') + 1, 
                             compareItem.lastIndexOf('",')
                         );
-                        
-                        console.log(mainItemGroup + '     ' + compareItemGroup)
 
                         if(mainItemGroup != compareItemGroup)
                             return
@@ -128,7 +167,7 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false) =
     var iptvList = await buildHelper.getList('file://C:\\Projects\\m3u-builder\\src\\files\\tv_channels_OhnHB0qWvx.m3u');
     var iptvListArr = await iptvList.split('\n');
 
-    var sweIptvArr = await getIptv(iptvListArr, true, true);
+    var sweIptvArr = await getIptv(iptvListArr, true, true, true);
     builder.createGroup(sweIptvArr, 'sweCustomList');
 
     var fullIptvArr = await getIptv(iptvListArr);

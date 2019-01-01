@@ -9844,11 +9844,11 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/7290
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9163
 #EXTINF:-1 tvg-logo="SVT1" group-title="Sweden", SVT1 SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6138
-#EXTINF:-1 tvg-logo="SVT1" group-title="Sweden", SVT 1 FHD VIP SE
+#EXTINF:-1 tvg-logo="SVT1" group-title="Sweden", SVT1 FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9152
 #EXTINF:-1 tvg-logo="SVT2" group-title="Sweden", SVT2 HD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2965
-#EXTINF:-1 tvg-logo="SVT2" group-title="Sweden", SVT 2 FHD VIP SE
+#EXTINF:-1 tvg-logo="SVT2" group-title="Sweden", SVT2 FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9151
 #EXTINF:-1 tvg-logo="TV3" group-title="Sweden", TV3 HD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2963
@@ -9880,9 +9880,9 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2954
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6497
 #EXTINF:-1 tvg-logo="TV12" group-title="Sweden", TV12 SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2942
-#EXTINF:-1 tvg-logo="TV12" group-title="Sweden", TV 12 FHD VIP SE
+#EXTINF:-1 tvg-logo="TV12" group-title="Sweden", TV12 FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9148
-#EXTINF:-1 tvg-logo="default" group-title="SE Barnkanaler", SVT Barnkanalen SE
+#EXTINF:-1 tvg-logo="default" group-title="SE Barnkanaler", SVTBarnkanalen SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2964
 #EXTINF:-1 tvg-logo="default" group-title="SE Barnkanaler", Boomerang SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6141
@@ -9906,7 +9906,7 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/17223
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/17224
 #EXTINF:-1 tvg-logo="TV4" group-title="SE Dokumentär", TV4 Fakta SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2960
-#EXTINF:-1 tvg-logo="default" group-title="SE Dokumentär", Kunskapskanalen FHD SE
+#EXTINF:-1 tvg-logo="default" group-title="SE Dokumentär", Kuns kapskanalen FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6500
 #EXTINF:-1 tvg-logo="default" group-title="SE Dokumentär", Discovery Channel HD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2985
@@ -9976,7 +9976,7 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9588
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2944
 #EXTINF:-1 tvg-logo="TV4" group-title="SE Filmkanaler/Serier", TV4 Film SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2958
-#EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", SF Kanalen SE
+#EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", SF K analen SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2980
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Comedy Central SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2996
@@ -10014,7 +10014,7 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6195
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2975
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", C More Golf FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9607
-#EXTINF:-1 tvg-logo="default" group-title="SE Sport", SportKanalen FHD VIP SE
+#EXTINF:-1 tvg-logo="default" group-title="SE Sport", Spor tKanalen FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/11058
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", Strive Sport La Liga FHD VIP SE [Live During Events Only]
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/17220
@@ -10072,7 +10072,7 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6884
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9149
 #EXTINF:-1 tvg-logo="default" group-title="SE Nyheter", Dagens Industri TV HD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9606
-#EXTINF:-1 tvg-logo="default" group-title="SE Nyheter", TV Malmo VIP SE
+#EXTINF:-1 tvg-logo="default" group-title="SE Nyheter", TVMalmo VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9593
 #EXTINF:-1 tvg-logo="default" group-title="SE Nyheter", CNN International FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/17227
@@ -10088,7 +10088,7 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6507
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6139
 #EXTINF:-1 tvg-logo="SVT2" group-title="SE Reservkanaler", SVT2 (BackUP) SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6508
-#EXTINF:-1 tvg-logo="SVT2" group-title="SE Reservkanaler", SVT 24/B HD VIP SE
+#EXTINF:-1 tvg-logo="SVT2" group-title="SE Reservkanaler", SVT24/B HD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9150
 #EXTINF:-1 tvg-logo="SVT2" group-title="SE Reservkanaler", SVT24/B (BackUP) SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6509
@@ -10106,7 +10106,7 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9267
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/3917
 #EXTINF:-1 tvg-logo="TV12" group-title="SE Reservkanaler", TV12 FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6498
-#EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", Kunskapskanalen SE
+#EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", Kuns kapskanalen SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2993
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", Animal Planet SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6098
