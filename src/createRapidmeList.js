@@ -59,44 +59,6 @@ getIptv = async (iptvListArr, onlySwedish = false) => {
 
 }
 
-// Obsolete
-getSweIptv = async (iptvListArr) => {
-    var sweIptvArr = ['#EXTM3U'];
-    var isSwedish = false;
-    var groupTitle = 'Svenska';
-    var skipIndex = '';
-    iptvListArr.forEach((iptvChannel, i) => {
-        if(isSwedish){
-            if(skipIndex == i)
-                return;
-
-            if(iptvChannel.includes('==========')){
-                groupTitle = getGroupTitle(iptvChannel);
-                skipIndex = i + 1;
-                return;
-            }
-
-            if(iptvChannel.includes('#EXTINF')){
-                var iptvChannelSplit = iptvChannel.split(',');
-                var customExtinfRow = buildHelper.getExtinf(iptvChannelSplit[1], groupTitle);
-                sweIptvArr.push(customExtinfRow);
-            }
-            else{
-                sweIptvArr.push(iptvChannel);            
-            }
-        }
-
-        if(iptvChannel.includes('##########') && iptvChannel.includes('##########   Sweden   ##########'))
-            isSwedish = true;
-        else if (iptvChannel.includes('##########')){
-            isSwedish = false;
-            sweIptvArr.pop();
-        }
-    })
-
-    return sweIptvArr;
-}
-
 (init = async () => {
     var iptvList = await buildHelper.getList('file://C:\\Projects\\m3u-builder\\src\\files\\tv_channels_OhnHB0qWvx.m3u');
     var iptvListArr = await iptvList.split('\n');
