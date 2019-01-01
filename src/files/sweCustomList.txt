@@ -1,21 +1,11 @@
-#EXTINF:-1 tvg-logo="SVT1" group-title="Sweden", SVT1 SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6138
 #EXTINF:-1 tvg-logo="SVT1" group-title="Sweden", SVT 1 FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9152
-#EXTINF:-1 tvg-logo="SVT2" group-title="Sweden", SVT2 HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2965
 #EXTINF:-1 tvg-logo="SVT2" group-title="Sweden", SVT 2 FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9151
-#EXTINF:-1 tvg-logo="TV3" group-title="Sweden", TV3 HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2963
 #EXTINF:-1 tvg-logo="TV3" group-title="Sweden", TV3 FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9592
-#EXTINF:-1 tvg-logo="TV4" group-title="Sweden", TV4 HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2962
 #EXTINF:-1 tvg-logo="TV4" group-title="Sweden", TV4 FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6490
-#EXTINF:-1 tvg-logo="Kanal5" group-title="Sweden", Kanal 5 HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2955
 #EXTINF:-1 tvg-logo="Kanal5" group-title="Sweden", Kanal 5 FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9268
 #EXTINF:-1 tvg-logo="TV6" group-title="Sweden", TV6 FHD SE
@@ -24,18 +14,12 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6499
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2941
 #EXTINF:-1 tvg-logo="TV8" group-title="Sweden", TV8 SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2953
-#EXTINF:-1 tvg-logo="Kanal9" group-title="Sweden", Kanal 9 HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2943
 #EXTINF:-1 tvg-logo="Kanal9" group-title="Sweden", Kanal 9 FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6137
 #EXTINF:-1 tvg-logo="TV10" group-title="Sweden", TV10 HD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/3000
-#EXTINF:-1 tvg-logo="Kanal11" group-title="Sweden", Kanal 11 HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2954
 #EXTINF:-1 tvg-logo="Kanal11" group-title="Sweden", Kanal 11 FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6497
-#EXTINF:-1 tvg-logo="TV12" group-title="Sweden", TV12 SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2942
 #EXTINF:-1 tvg-logo="TV12" group-title="Sweden", TV 12 FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9148
 #EXTINF:-1 tvg-logo="default" group-title="SE Barnkanaler", SVT Barnkanalen SE
@@ -64,8 +48,6 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/17224
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2960
 #EXTINF:-1 tvg-logo="default" group-title="SE Dokumentär", Kunskapskanalen FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6500
-#EXTINF:-1 tvg-logo="default" group-title="SE Dokumentär", Discovery Channel HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2985
 #EXTINF:-1 tvg-logo="default" group-title="SE Dokumentär", Discovery Channel FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/7285
 #EXTINF:-1 tvg-logo="default" group-title="SE Dokumentär", Disc. Science VIP SE
@@ -100,32 +82,20 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2984
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9595
 #EXTINF:-1 tvg-logo="default" group-title="SE Dokumentär", Outdoor Channel HD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/17222
-#EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", C More First HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2971
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", C More First FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9155
-#EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", C More Hits HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2972
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", C More Hits FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6494
-#EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", C More Stars HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6140
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", C More Stars FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2974
-#EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Viasat Film Action SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2969
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Viasat Film Action HD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9590
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Viasat Film Comedy HD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6104
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Viasat Film Family SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2968
-#EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Viasat Film Hits HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2967
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Viasat Film Hits HD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9589
-#EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Viasat Film Premiere HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2970
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Viasat Film Premiere HD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9588
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", Viasat Series HD SE
@@ -138,8 +108,6 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2980
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2996
 #EXTINF:-1 tvg-logo="TV4" group-title="SE Filmkanaler/Serier", TV4 Guld SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2961
-#EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", C More Series HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2973
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", C More Series FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6495
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", FOX SE
@@ -148,8 +116,6 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2998
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2994
 #EXTINF:-1 tvg-logo="default" group-title="SE Filmkanaler/Serier", TCM SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2995
-#EXTINF:-1 tvg-logo="default" group-title="SE Sport", C More Fotboll HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/1176
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", C More Fotboll FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/13249
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", C More Live 1 HD SE
@@ -162,12 +128,8 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2948
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2947
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", C More Live 5 FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6194
-#EXTINF:-1 tvg-logo="default" group-title="SE Sport", C More Hockey HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2976
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", C More Hockey FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6195
-#EXTINF:-1 tvg-logo="default" group-title="SE Sport", C More Golf HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2975
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", C More Golf FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9607
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", SportKanalen FHD VIP SE
@@ -182,8 +144,6 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/23261
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2935
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", Viasat Sport SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2952
-#EXTINF:-1 tvg-logo="default" group-title="SE Sport", Viasat Sport Premium HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/1186
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", Viasat Sport Premium FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/1187
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", Viasat Fotboll HD SE
@@ -192,12 +152,8 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/1174
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2928
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", Viasat Motor HD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2929
-#EXTINF:-1 tvg-logo="default" group-title="SE Sport", Eurosport 1 HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2977
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", Eurosport 1 FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6102
-#EXTINF:-1 tvg-logo="default" group-title="SE Sport", Eurosport 2 HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2946
 #EXTINF:-1 tvg-logo="default" group-title="SE Sport", Eurosport 2 FHD VIP SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9603
 #EXTINF:-1 tvg-logo="TV3" group-title="SE Sport", TV3 Sport HD SE
@@ -274,8 +230,6 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2987
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/9587
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", TLC HD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2999
-#EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More First SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6099
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More First FHD SE
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6493
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Hits FHD VIP SE
@@ -288,8 +242,6 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/6100
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/2997
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More First FHD SE [Multi-Sub] VIP
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18751
-#EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More First HD SE [Multi-Sub] VIP
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18750
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Fotboll HD (B) SE VIP
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18748
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Fotboll HD SE VIP
@@ -302,8 +254,6 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18756
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18755
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Hockey FHD SE VIP
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18746
-#EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Hockey HD SE VIP
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18747
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Live 2 HD (B) SE VIP
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18741
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Live 2 HD SE VIP
@@ -318,16 +268,14 @@ http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18737
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18738
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Live 5 FHD SE VIP
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18735
-#EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Live 5 HD SE VIP
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18736
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Live HD (B) SE VIP
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18743
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Live HD SE VIP
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18744
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Series FHD SE [Multi-Sub] VIP
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18752
-#EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Live 5 HD SE
-http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/1175
+#EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Live 5 FHD SE VIP
+http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18735
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Stars FHD SE VIP
 http://foviptv.shop:8080/OhnHB0qWvx/11ukc9QyNf/18754
 #EXTINF:-1 tvg-logo="default" group-title="SE Reservkanaler", C More Stars FHD SE [Multi-Sub] VIP

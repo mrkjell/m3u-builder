@@ -1,8 +1,12 @@
 const buildHelper = require('./buildHelper');
 const builder = require('./builder');
 
-var getGroupTitle = (name) => {
+getGroupTitle = (name) => {
     return (name.split(',')[1]).replaceAll('##########', '').replaceAll('==========', '').trim();
+}
+
+getCommonChannelname = (extinfRow) => {
+    return (extinfRow.split(',')[1]).replaceAll('SE', '').replaceAll('FHD', '').replaceAll('HD', '').replaceAll('VIP','').replaceAll(' ', '').trim();
 }
 
 String.prototype.replaceAll = function(search, replacement) {
@@ -10,7 +14,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.split(search).join(replacement);
 };
 
-getIptv = async (iptvListArr, onlySwedish = false) => {
+getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false) => {
     var iptvArr = [];
     var vodArr = [];
     var country = ''
@@ -54,6 +58,67 @@ getIptv = async (iptvListArr, onlySwedish = false) => {
         }
     });
 
+    if(tryRemoveDuplicate){
+        var distinctIptvArr = [];
+        var lastAdded = '';
+
+            iptvArr.forEach((mainItem, mainIndex) => {
+                var bestQualiryAdded = false; 
+
+                if(!mainItem.includes('#EXTINF')) 
+                    return;
+
+                if(lastAdded == getCommonChannelname(mainItem))
+                    return;
+
+                var bestChannel = [mainItem, iptvArr[mainIndex + 1]];
+
+                if(!mainItem.includes('FHD')) {
+
+                var mainItemGroup = mainItem.substring(
+                    mainItem.lastIndexOf('group-title="') + 1, 
+                    mainItem.lastIndexOf('",')
+                );
+
+                    iptvArr.forEach((compareItem, compareIndex) => {
+                        if(!compareItem.includes('#EXTINF'))
+                            return;
+
+                        if(mainIndex == compareIndex)
+                            return;
+
+                        var compareItemGroup = compareItem.substring(
+                            compareItem.lastIndexOf('group-title="') + 1, 
+                            compareItem.lastIndexOf('",')
+                        );
+                        
+                        console.log(mainItemGroup + '     ' + compareItemGroup)
+
+                        if(mainItemGroup != compareItemGroup)
+                            return
+
+                        if(getCommonChannelname(mainItem) == getCommonChannelname(compareItem)) {
+                            if(compareItem.includes('FHD')){
+                                bestChannel = [compareItem, iptvArr[compareIndex + 1]];
+                                bestQualiryAdded = true;
+                            }
+                            else if(compareItem.includes('HD') && !bestQualiryAdded){
+                                bestChannel = [compareItem, iptvArr[compareIndex + 1]];
+                            }
+                        }
+                    })
+                }
+
+                lastAdded = getCommonChannelname(bestChannel[0]);
+                bestChannel.forEach((item) => {
+                    distinctIptvArr.push(item)
+                })
+            })
+
+        if(distinctIptvArr.length != 0)
+            iptvArr = distinctIptvArr
+    }
+
 
     return iptvArr.concat(vodArr);
 
@@ -63,7 +128,7 @@ getIptv = async (iptvListArr, onlySwedish = false) => {
     var iptvList = await buildHelper.getList('file://C:\\Projects\\m3u-builder\\src\\files\\tv_channels_OhnHB0qWvx.m3u');
     var iptvListArr = await iptvList.split('\n');
 
-    var sweIptvArr = await getIptv(iptvListArr, true);
+    var sweIptvArr = await getIptv(iptvListArr, true, true);
     builder.createGroup(sweIptvArr, 'sweCustomList');
 
     var fullIptvArr = await getIptv(iptvListArr);
