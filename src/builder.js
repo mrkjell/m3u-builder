@@ -9,12 +9,12 @@ module.exports = {
       newChannelList += item + '\n';
     });
 
-    await writeFileAtomically('C:\\Projects\\m3u-builder\\src\\files\\'+listName+'.txt', newChannelList);
+    await writeFileAtomically('files/'+listName+'_plus.txt', newChannelList);
   },
 
   createGroupFromFavoriteList: async (iptvListArr, listName, groupName) => {
     var newChannelList = '#EXTM3U';
-    var channelList = await buildHelper.getList('file://C:\\Projects\\m3u-builder\\src\\files\\mychannellist.txt');
+    var channelList = await buildHelper.getList('path/to/favorite-list');
     var channelListArr = channelList.split('|');
     var qualityArr = ['FHD', 'HD', ''];
     
@@ -46,6 +46,6 @@ module.exports = {
 
     });
 
-    await writeFileAtomically('C:\\Projects\\m3u-builder\\src\\files\\'+listName+'.txt', newChannelList);
+    await writeFileAtomically('files/'+listName+'.txt', newChannelList);
   }
 }

@@ -18,25 +18,16 @@ tryManualFixChannelName = (extinfRow) => {
         if(extinfSplit[1].trim().charAt(3) === ' ')
             extinfSplit[1] = extinfSplit[1].splice(4, 1, '');
         extinfRow = extinfSplit[0] + ',' + extinfSplit[1];
-
-        console.log(extinfRow);
-
     }
     else if(extinfSplit[1].toLowerCase().includes('tv')){
         if(extinfSplit[1].trim().charAt(2) === ' ')
             extinfSplit[1] = extinfSplit[1].splice(3, 1, '');
         extinfRow = extinfSplit[0] + ',' + extinfSplit[1];
-
-    console.log(extinfRow);
-
     }
     else if(extinfSplit[1].toLowerCase().includes('kanal')){
         if(extinfSplit[1].trim().charAt(5) !== ' ')
             extinfSplit[1] = extinfSplit[1].splice(5, 0, ' ')
         extinfRow = extinfSplit[0] + ',' + extinfSplit[1];
-
-    console.log(extinfRow);
-
     }
     return extinfRow;
 }
@@ -90,13 +81,14 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
                 iptvArr.push(tryManualFixChannelName(customExtinfRow));
         }
         else {
-            if(groupTitle.toLowerCase().includes('vod'))
-                vodArr.push(customExtinfRow);
+            if(groupTitle.toLowerCase().includes('vod')){
+                vodArr.push(iptvChannel);
+                console.log(iptvChannel);
+            }
             else
                 iptvArr.push(iptvChannel);            
         }
     });
-
 
     /// Remove duplicate channels
     if(tryRemoveDuplicate) {
@@ -164,7 +156,7 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
 }
 
 (init = async () => {
-    var iptvList = await buildHelper.getList('file://C:\\Projects\\m3u-builder\\src\\files\\tv_channels_OhnHB0qWvx.m3u');
+    var iptvList = await buildHelper.getList('http://foviptv.shop:8080/get.php?username=OhnHB0qWvx&password=11ukc9QyNf&type=m3u&output=ts');
     var iptvListArr = await iptvList.split('\n');
 
     var sweIptvArr = await getIptv(iptvListArr, true, true, true);

@@ -15,7 +15,7 @@ getSweIptv = async (iptvListArr) => {
 }
 
 (init = async () => {
-    var iptvList = await buildHelper.getList('file://C:\\Projects\\m3u-builder\\src\\files\\tv_channels_HJWbvVXtXm_plus.m3u');
+    var iptvList = await buildHelper.getList('path/to/file');
     var iptvListArr = await iptvList.split('\n');
     var sweIptvArr = await getSweIptv(iptvListArr);
 
