@@ -81,10 +81,8 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
                 iptvArr.push(tryManualFixChannelName(customExtinfRow));
         }
         else {
-            if(groupTitle.toLowerCase().includes('vod')){
+            if(groupTitle.toLowerCase().includes('vod'))
                 vodArr.push(iptvChannel);
-                console.log(iptvChannel);
-            }
             else
                 iptvArr.push(iptvChannel);            
         }
