@@ -9,6 +9,13 @@ getCommonChannelname = (extinfRow) => {
     return (extinfRow.split(',')[1]).replaceAll('SE', '').replaceAll('FHD', '').replaceAll('HD', '').replaceAll('VIP','').replaceAll(' ', '').trim();
 }
 
+inbetween = (str, start, end) => {
+    return str.substring(
+        str.lastIndexOf(start), 
+        str.lastIndexOf(end)
+    );
+}
+
 tryManualFixChannelName = (extinfRow) => {
     var extinfSplit = extinfRow.split(',');
     if(!extinfSplit[1].includes(' SE'))
@@ -74,8 +81,14 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
 
             var customExtinfRow = onlySwedish ? buildHelper.getExtinf(iptvChannel, groupTitle) : iptvChannel;
             
-            if(groupTitle.toLowerCase().includes('vod'))
+            if(groupTitle.toLowerCase().includes('vod')){
+                if(!iptvChannel.toLowerCase().includes('swedish')){
+                    skipIndex = i + 1;
+                    return; 
+                }
+
                 vodArr.push(customExtinfRow);
+            }
             else
                 iptvArr.push(customExtinfRow);
         }
@@ -104,10 +117,7 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
 
                 if(!mainItem.includes('FHD')) {
 
-                var mainItemGroup = mainItem.substring(
-                    mainItem.lastIndexOf('group-title="') + 1, 
-                    mainItem.lastIndexOf('",')
-                );
+                var mainItemGroup = inbetween(mainItem, 'group-title="', '",');
 
                     iptvArr.forEach((compareItem, compareIndex) => {
 
@@ -117,17 +127,14 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
                         if(mainIndex == compareIndex)
                             return;
 
-                        var compareItemGroup = compareItem.substring(
-                            compareItem.lastIndexOf('group-title="') + 1, 
-                            compareItem.lastIndexOf('",')
-                        );
+                        var compareItemGroup = inbetween(compareItem, 'group-title="', '",');
 
                         if(mainItemGroup != compareItemGroup)
                             return
 
                         if(getCommonChannelname(mainItem) == getCommonChannelname(compareItem)) {
                             if(compareItem.includes('FHD')){
-                                bestChannel = [compareItem, iptvArr[compareIndex + 1]];
+                                bestChannel = [mainItem, iptvArr[compareIndex + 1]];
                                 bestQualiryAdded = true;
                             }
                             else if(compareItem.includes('HD') && !bestQualiryAdded){
@@ -153,7 +160,7 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
 }
 
 (init = async () => {
-    var iptvList = await buildHelper.getList('file://C:\\_Avensia\\Git\\m3u-builder\\src\\files\\m3uexamples\\tv_channels_OhnHB0qWvx_plus.m3u');
+    var iptvList = await buildHelper.getList('file://');
     var iptvListArr = await iptvList.split('\n');
 
     var sweIptvArr = await getIptv(iptvListArr, true, true, true);
