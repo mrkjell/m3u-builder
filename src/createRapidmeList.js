@@ -154,7 +154,7 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
 }
 
 (init = async () => {
-    var iptvList = await buildHelper.getList('http://foviptv.shop:8080/get.php?username=OhnHB0qWvx&password=11ukc9QyNf&type=m3u&output=ts');
+    var iptvList = await buildHelper.getList('http://foviptv.shop:8080/get.php?username=xxx&password=xxx&type=m3u&output=ts');
     var iptvListArr = await iptvList.split('\n');
 
     var sweIptvArr = await getIptv(iptvListArr, true, true, true);
