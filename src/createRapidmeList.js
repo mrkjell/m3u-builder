@@ -72,7 +72,7 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
                 return;
             }
 
-            var customExtinfRow = buildHelper.getExtinf(iptvChannel, groupTitle);
+            var customExtinfRow = onlySwedish ? buildHelper.getExtinf(iptvChannel, groupTitle) : iptvChannel;
             
             if(groupTitle.toLowerCase().includes('vod'))
                 vodArr.push(customExtinfRow);
