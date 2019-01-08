@@ -9,7 +9,7 @@ module.exports = {
       newChannelList += item + '\n';
     });
 
-    await writeFileAtomically('files/'+listName+'_plus.txt', newChannelList);
+    await writeFileAtomically('files/'+listName+'.txt', newChannelList);
   },
 
   createGroupFromFavoriteList: async (iptvListArr, listName, groupName) => {

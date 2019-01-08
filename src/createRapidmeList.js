@@ -76,9 +76,9 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
             var customExtinfRow = buildHelper.getExtinf(iptvChannelSplit[1], groupTitle);
 
             if(groupTitle.toLowerCase().includes('vod'))
-                vodArr.push(customExtinfRow);
+                vodArr.push(iptvChannel);
             else
-                iptvArr.push(tryManualFixChannelName(customExtinfRow));
+                iptvArr.push(iptvChannel);
         }
         else {
             if(groupTitle.toLowerCase().includes('vod'))
@@ -154,7 +154,7 @@ getIptv = async (iptvListArr, onlySwedish = false, tryRemoveDuplicate = false, t
 }
 
 (init = async () => {
-    var iptvList = await buildHelper.getList('http://foviptv.shop:8080/get.php?username=xxx&password=xxx&type=m3u_plus&output=ts');
+    var iptvList = await buildHelper.getList('file://C:\\_Avensia\\Git\\m3u-builder\\src\\files\\m3uexamples\\tv_channels_OhnHB0qWvx_plus.m3u');
     var iptvListArr = await iptvList.split('\n');
 
     var sweIptvArr = await getIptv(iptvListArr, true, true, true);
